@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name quad_level_shifter)(type KiCad)(uri "$(KIPRJMOD)\\quad_level_shifter.pretty")(options "")(descr ""))
+  (lib (name 28pins)(type KiCad)(uri "F:\\KiCad Projects\\ArduinoUno\\28pins.pretty")(options "")(descr ""))
+)

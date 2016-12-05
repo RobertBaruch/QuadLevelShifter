@@ -1,0 +1,1710 @@
+EESchema Schematic File Version 2
+LIBS:quad_level_shifter
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:friden-tester
+LIBS:QuadLevelShifter-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MAX395CWG+ U2
+U 1 1 58445490
+P 5500 3150
+F 0 "U2" H 6150 2550 60  0000 C CNN
+F 1 "MAX395CWG+" H 5900 4450 60  0000 C CNN
+F 2 "quad_level_shifter:SOIC-24-W" H 6050 2400 60  0001 C CNN
+F 3 "http://datasheets.maximintegrated.com/en/ds/MAX395.pdf" H 5850 2200 60  0001 C CNN
+F 4 "MAX395CWG+" H 6350 2300 60  0001 C CNN "MFG P/N"
+F 5 "Maxim" H 5750 2300 60  0001 C CNN "MFG"
+	1    5500 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L 2EDN7524 U1
+U 1 1 584454C5
+P 1500 2200
+F 0 "U1" H 1700 2650 50  0000 C CNN
+F 1 "2EDN7524" H 1700 2250 50  0000 C CNN
+F 2 "quad_level_shifter:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 2020 2110 60  0001 C CNN
+F 3 "http://www.infineon.com/dgdl/Infineon-2EDN752x-2EDN852x-DS-02_01-DS-v02_01-EN.pdf?fileId=5546d462525dbac40152abcc7dbb1727" H 1925 1890 60  0001 C CNN
+F 4 "2EDN7524FXTMA1" H 2105 2000 60  0001 C CNN "MFG P/N"
+F 5 "Infineon" H 1475 2000 60  0001 C CNN "MFG"
+	1    1500 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L CFSH05-20L D2
+U 1 1 58445532
+P 2900 1300
+F 0 "D2" H 2900 1400 50  0000 C CNN
+F 1 "CFSH05-20L" H 2900 1200 50  0000 C CNN
+F 2 "quad_level_shifter:SOD-882L" H 3030 930 50  0001 C CNN
+F 3 "https://www.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=CFSH05-20L.PDF" H 2985 1005 50  0001 C CNN
+F 4 "Central Semiconductor" H 2285 1100 60  0001 C CNN "MFG"
+F 5 "CFSH05-20L TR" H 3220 1090 60  0001 C CNN "MFG P/N"
+	1    2900 1300
+	0    1    1    0   
+$EndComp
+$Comp
+L 100n C1
+U 1 1 58445E68
+P 850 1200
+F 0 "C1" H 875 1300 50  0000 L CNN
+F 1 "100n" H 875 1100 50  0000 L CNN
+F 2 "quad_level_shifter:C_0805" H 1000 750 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/documents/chara_sheet/CGJ4J2X7R1E104K125AA.pdf" H 1100 850 50  0001 C CNN
+F 4 "CGJ4J2X7R1E104K125AA" H 1400 950 60  0001 C CNN "MFG P/N"
+F 5 "TDK" H 700 950 60  0001 C CNN "MFG"
+	1    850  1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDREF #PWR01
+U 1 1 58445EB5
+P 850 1350
+F 0 "#PWR01" H 850 1100 50  0001 C CNN
+F 1 "GNDREF" H 850 1200 50  0001 C CNN
+F 2 "" H 850 1350 50  0000 C CNN
+F 3 "" H 850 1350 50  0000 C CNN
+	1    850  1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 1450 1350 1450
+Wire Wire Line
+	1350 1050 1350 1850
+$Comp
+L 1u C2
+U 1 1 58445FD6
+P 1150 1200
+F 0 "C2" H 1175 1300 50  0000 L CNN
+F 1 "1u" H 1175 1100 50  0000 L CNN
+F 2 "quad_level_shifter:C_0805" H 1300 750 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/documents/chara_sheet/C2012X5R1E105M085AC.pdf" H 1400 850 50  0001 C CNN
+F 4 "C2012X5R1E105M085AC" H 1700 950 60  0001 C CNN "MFG P/N"
+F 5 "TDK" H 1000 950 60  0001 C CNN "MFG"
+	1    1150 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDREF #PWR02
+U 1 1 58446015
+P 1150 1350
+F 0 "#PWR02" H 1150 1100 50  0001 C CNN
+F 1 "GNDREF" H 1150 1200 50  0001 C CNN
+F 2 "" H 1150 1350 50  0000 C CNN
+F 3 "" H 1150 1350 50  0000 C CNN
+	1    1150 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDREF #PWR03
+U 1 1 5844602F
+P 1350 2100
+F 0 "#PWR03" H 1350 1850 50  0001 C CNN
+F 1 "GNDREF" H 1350 1950 50  0001 C CNN
+F 2 "" H 1350 2100 50  0000 C CNN
+F 3 "" H 1350 2100 50  0000 C CNN
+	1    1350 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 2100 1350 2050
+Wire Wire Line
+	1350 2050 1400 2050
+$Comp
+L 100n C3
+U 1 1 584460AE
+P 5700 1450
+F 0 "C3" H 5725 1550 50  0000 L CNN
+F 1 "100n" H 5725 1350 50  0000 L CNN
+F 2 "quad_level_shifter:C_0805" H 5850 1000 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/documents/chara_sheet/CGJ4J2X7R1E104K125AA.pdf" H 5950 1100 50  0001 C CNN
+F 4 "CGJ4J2X7R1E104K125AA" H 6250 1200 60  0001 C CNN "MFG P/N"
+F 5 "TDK" H 5550 1200 60  0001 C CNN "MFG"
+	1    5700 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDREF #PWR04
+U 1 1 584460B4
+P 5700 1600
+F 0 "#PWR04" H 5700 1350 50  0001 C CNN
+F 1 "GNDREF" H 5700 1450 50  0001 C CNN
+F 2 "" H 5700 1600 50  0000 C CNN
+F 3 "" H 5700 1600 50  0000 C CNN
+	1    5700 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR05
+U 1 1 584460BA
+P 5700 1300
+F 0 "#PWR05" H 5700 1150 50  0001 C CNN
+F 1 "+12V" H 5700 1440 50  0000 C CNN
+F 2 "" H 5700 1300 50  0000 C CNN
+F 3 "" H 5700 1300 50  0000 C CNN
+	1    5700 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 1300 6000 1300
+$Comp
+L 1u C4
+U 1 1 584460C3
+P 6000 1450
+F 0 "C4" H 6025 1550 50  0000 L CNN
+F 1 "1u" H 6025 1350 50  0000 L CNN
+F 2 "quad_level_shifter:C_0805" H 6150 1000 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/documents/chara_sheet/C2012X5R1E105M085AC.pdf" H 6250 1100 50  0001 C CNN
+F 4 "C2012X5R1E105M085AC" H 6550 1200 60  0001 C CNN "MFG P/N"
+F 5 "TDK" H 5850 1200 60  0001 C CNN "MFG"
+	1    6000 1450
+	1    0    0    -1  
+$EndComp
+Connection ~ 5700 1300
+$Comp
+L GNDREF #PWR06
+U 1 1 584460CA
+P 6000 1600
+F 0 "#PWR06" H 6000 1350 50  0001 C CNN
+F 1 "GNDREF" H 6000 1450 50  0001 C CNN
+F 2 "" H 6000 1600 50  0000 C CNN
+F 3 "" H 6000 1600 50  0000 C CNN
+	1    6000 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5350 1300 5350 2000
+Wire Wire Line
+	5350 2000 5400 2000
+Wire Wire Line
+	5400 2600 5000 2600
+Wire Wire Line
+	5000 2600 5000 1600
+Wire Wire Line
+	5400 2700 4900 2700
+Wire Wire Line
+	4900 2700 4900 1900
+$Comp
+L 470R R9
+U 1 1 584462D7
+P 4300 1600
+F 0 "R9" V 4380 1600 50  0000 C CNN
+F 1 "470R" V 4300 1600 50  0000 C CNN
+F 2 "quad_level_shifter:R_1210" H 4350 1050 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/20035/dcrcwe3.pdf" H 4300 1150 50  0001 C CNN
+F 4 "CRCW1210470RFKEA" H 4800 1300 60  0001 C CNN "MFG P/N"
+F 5 "Vishay" H 4100 1300 60  0001 C CNN "MFG"
+	1    4300 1600
+	0    1    1    0   
+$EndComp
+$Comp
+L 470R R10
+U 1 1 58446348
+P 4300 1900
+F 0 "R10" V 4380 1900 50  0000 C CNN
+F 1 "470R" V 4300 1900 50  0000 C CNN
+F 2 "quad_level_shifter:R_1210" H 4350 1350 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/20035/dcrcwe3.pdf" H 4300 1450 50  0001 C CNN
+F 4 "CRCW1210470RFKEA" H 4800 1600 60  0001 C CNN "MFG P/N"
+F 5 "Vishay" H 4100 1600 60  0001 C CNN "MFG"
+	1    4300 1900
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2000 1900 4150 1900
+Wire Wire Line
+	4900 1900 4450 1900
+Wire Wire Line
+	2000 1600 4150 1600
+Wire Wire Line
+	5000 1600 4450 1600
+$Comp
+L CFSH05-20L D1
+U 1 1 584465CE
+P 2600 1300
+F 0 "D1" H 2600 1400 50  0000 C CNN
+F 1 "CFSH05-20L" H 2600 1200 50  0000 C CNN
+F 2 "quad_level_shifter:SOD-882L" H 2730 930 50  0001 C CNN
+F 3 "https://www.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=CFSH05-20L.PDF" H 2685 1005 50  0001 C CNN
+F 4 "Central Semiconductor" H 1985 1100 60  0001 C CNN "MFG"
+F 5 "CFSH05-20L TR" H 2920 1090 60  0001 C CNN "MFG P/N"
+	1    2600 1300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2600 1450 2600 3450
+Connection ~ 2600 1600
+Wire Wire Line
+	2900 1450 2900 3450
+Connection ~ 2900 1900
+Wire Wire Line
+	2600 1150 2600 900 
+Wire Wire Line
+	2900 1150 2900 900 
+$Comp
+L +12V #PWR07
+U 1 1 5844668F
+P 2600 900
+F 0 "#PWR07" H 2600 750 50  0001 C CNN
+F 1 "+12V" H 2600 1040 50  0000 C CNN
+F 2 "" H 2600 900 50  0000 C CNN
+F 3 "" H 2600 900 50  0000 C CNN
+	1    2600 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR08
+U 1 1 584466B8
+P 2900 900
+F 0 "#PWR08" H 2900 750 50  0001 C CNN
+F 1 "+12V" H 2900 1040 50  0000 C CNN
+F 2 "" H 2900 900 50  0000 C CNN
+F 3 "" H 2900 900 50  0000 C CNN
+	1    2900 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L CFSH05-20L D6
+U 1 1 584466E3
+P 2900 3600
+F 0 "D6" H 2900 3700 50  0000 C CNN
+F 1 "CFSH05-20L" H 2900 3500 50  0000 C CNN
+F 2 "quad_level_shifter:SOD-882L" H 3030 3230 50  0001 C CNN
+F 3 "https://www.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=CFSH05-20L.PDF" H 2985 3305 50  0001 C CNN
+F 4 "Central Semiconductor" H 2285 3400 60  0001 C CNN "MFG"
+F 5 "CFSH05-20L TR" H 3220 3390 60  0001 C CNN "MFG P/N"
+	1    2900 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L CFSH05-20L D5
+U 1 1 58446728
+P 2600 3600
+F 0 "D5" H 2600 3700 50  0000 C CNN
+F 1 "CFSH05-20L" H 2600 3500 50  0000 C CNN
+F 2 "quad_level_shifter:SOD-882L" H 2730 3230 50  0001 C CNN
+F 3 "https://www.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=CFSH05-20L.PDF" H 2685 3305 50  0001 C CNN
+F 4 "Central Semiconductor" H 1985 3400 60  0001 C CNN "MFG"
+F 5 "CFSH05-20L TR" H 2920 3390 60  0001 C CNN "MFG P/N"
+	1    2600 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L GNDREF #PWR09
+U 1 1 584467B8
+P 2600 3800
+F 0 "#PWR09" H 2600 3550 50  0001 C CNN
+F 1 "GNDREF" H 2600 3650 50  0001 C CNN
+F 2 "" H 2600 3800 50  0000 C CNN
+F 3 "" H 2600 3800 50  0000 C CNN
+	1    2600 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 3800 2600 3750
+$Comp
+L GNDREF #PWR010
+U 1 1 5844680D
+P 2900 3800
+F 0 "#PWR010" H 2900 3550 50  0001 C CNN
+F 1 "GNDREF" H 2900 3650 50  0001 C CNN
+F 2 "" H 2900 3800 50  0000 C CNN
+F 3 "" H 2900 3800 50  0000 C CNN
+	1    2900 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 3800 2900 3750
+Wire Wire Line
+	1350 1550 1400 1550
+Connection ~ 1350 1450
+Wire Wire Line
+	1350 1850 1400 1850
+Connection ~ 1350 1550
+Wire Wire Line
+	1400 1650 1000 1650
+Wire Wire Line
+	1400 1950 1000 1950
+$Comp
+L 2EDN7524 U3
+U 1 1 58446F50
+P 1500 3500
+F 0 "U3" H 1700 3950 50  0000 C CNN
+F 1 "2EDN7524" H 1700 3550 50  0000 C CNN
+F 2 "quad_level_shifter:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 2020 3410 60  0001 C CNN
+F 3 "http://www.infineon.com/dgdl/Infineon-2EDN752x-2EDN852x-DS-02_01-DS-v02_01-EN.pdf?fileId=5546d462525dbac40152abcc7dbb1727" H 1925 3190 60  0001 C CNN
+F 4 "2EDN7524FXTMA1" H 2105 3300 60  0001 C CNN "MFG P/N"
+F 5 "Infineon" H 1475 3300 60  0001 C CNN "MFG"
+	1    1500 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 2750 1350 2750
+Wire Wire Line
+	1350 2400 1350 3150
+$Comp
+L GNDREF #PWR011
+U 1 1 58446F7F
+P 1350 3400
+F 0 "#PWR011" H 1350 3150 50  0001 C CNN
+F 1 "GNDREF" H 1350 3250 50  0001 C CNN
+F 2 "" H 1350 3400 50  0000 C CNN
+F 3 "" H 1350 3400 50  0000 C CNN
+	1    1350 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 3400 1350 3350
+Wire Wire Line
+	1350 3350 1400 3350
+Wire Wire Line
+	2000 3200 4150 3200
+Wire Wire Line
+	2000 2900 4150 2900
+Wire Wire Line
+	1350 2850 1400 2850
+Connection ~ 1350 2750
+Wire Wire Line
+	1350 3150 1400 3150
+Connection ~ 1350 2850
+Wire Wire Line
+	1400 2950 1000 2950
+Wire Wire Line
+	1400 3250 1000 3250
+$Comp
+L CFSH05-20L D4
+U 1 1 58447342
+P 3500 1300
+F 0 "D4" H 3500 1400 50  0000 C CNN
+F 1 "CFSH05-20L" H 3500 1200 50  0000 C CNN
+F 2 "quad_level_shifter:SOD-882L" H 3630 930 50  0001 C CNN
+F 3 "https://www.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=CFSH05-20L.PDF" H 3585 1005 50  0001 C CNN
+F 4 "Central Semiconductor" H 2885 1100 60  0001 C CNN "MFG"
+F 5 "CFSH05-20L TR" H 3820 1090 60  0001 C CNN "MFG P/N"
+	1    3500 1300
+	0    1    1    0   
+$EndComp
+$Comp
+L CFSH05-20L D3
+U 1 1 5844734A
+P 3200 1300
+F 0 "D3" H 3200 1400 50  0000 C CNN
+F 1 "CFSH05-20L" H 3200 1200 50  0000 C CNN
+F 2 "quad_level_shifter:SOD-882L" H 3330 930 50  0001 C CNN
+F 3 "https://www.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=CFSH05-20L.PDF" H 3285 1005 50  0001 C CNN
+F 4 "Central Semiconductor" H 2585 1100 60  0001 C CNN "MFG"
+F 5 "CFSH05-20L TR" H 3520 1090 60  0001 C CNN "MFG P/N"
+	1    3200 1300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3200 1150 3200 900 
+Wire Wire Line
+	3500 1150 3500 900 
+$Comp
+L +12V #PWR012
+U 1 1 58447352
+P 3200 900
+F 0 "#PWR012" H 3200 750 50  0001 C CNN
+F 1 "+12V" H 3200 1040 50  0000 C CNN
+F 2 "" H 3200 900 50  0000 C CNN
+F 3 "" H 3200 900 50  0000 C CNN
+	1    3200 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR013
+U 1 1 58447358
+P 3500 900
+F 0 "#PWR013" H 3500 750 50  0001 C CNN
+F 1 "+12V" H 3500 1040 50  0000 C CNN
+F 2 "" H 3500 900 50  0000 C CNN
+F 3 "" H 3500 900 50  0000 C CNN
+	1    3500 900 
+	1    0    0    -1  
+$EndComp
+$Comp
+L CFSH05-20L D8
+U 1 1 584474B6
+P 3500 3600
+F 0 "D8" H 3500 3700 50  0000 C CNN
+F 1 "CFSH05-20L" H 3500 3500 50  0000 C CNN
+F 2 "quad_level_shifter:SOD-882L" H 3630 3230 50  0001 C CNN
+F 3 "https://www.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=CFSH05-20L.PDF" H 3585 3305 50  0001 C CNN
+F 4 "Central Semiconductor" H 2885 3400 60  0001 C CNN "MFG"
+F 5 "CFSH05-20L TR" H 3820 3390 60  0001 C CNN "MFG P/N"
+	1    3500 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L CFSH05-20L D7
+U 1 1 584474BE
+P 3200 3600
+F 0 "D7" H 3200 3700 50  0000 C CNN
+F 1 "CFSH05-20L" H 3200 3500 50  0000 C CNN
+F 2 "quad_level_shifter:SOD-882L" H 3330 3230 50  0001 C CNN
+F 3 "https://www.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=CFSH05-20L.PDF" H 3285 3305 50  0001 C CNN
+F 4 "Central Semiconductor" H 2585 3400 60  0001 C CNN "MFG"
+F 5 "CFSH05-20L TR" H 3520 3390 60  0001 C CNN "MFG P/N"
+	1    3200 3600
+	0    1    1    0   
+$EndComp
+$Comp
+L GNDREF #PWR014
+U 1 1 584474C4
+P 3200 3800
+F 0 "#PWR014" H 3200 3550 50  0001 C CNN
+F 1 "GNDREF" H 3200 3650 50  0001 C CNN
+F 2 "" H 3200 3800 50  0000 C CNN
+F 3 "" H 3200 3800 50  0000 C CNN
+	1    3200 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 3800 3200 3750
+$Comp
+L GNDREF #PWR015
+U 1 1 584474CB
+P 3500 3800
+F 0 "#PWR015" H 3500 3550 50  0001 C CNN
+F 1 "GNDREF" H 3500 3650 50  0001 C CNN
+F 2 "" H 3500 3800 50  0000 C CNN
+F 3 "" H 3500 3800 50  0000 C CNN
+	1    3500 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 3800 3500 3750
+Wire Wire Line
+	3200 1450 3200 3450
+Connection ~ 3200 2900
+Wire Wire Line
+	3500 1450 3500 3450
+Connection ~ 3500 3200
+$Comp
+L 470R R11
+U 1 1 5844769D
+P 4300 2900
+F 0 "R11" V 4380 2900 50  0000 C CNN
+F 1 "470R" V 4300 2900 50  0000 C CNN
+F 2 "quad_level_shifter:R_1210" H 4350 2350 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/20035/dcrcwe3.pdf" H 4300 2450 50  0001 C CNN
+F 4 "CRCW1210470RFKEA" H 4800 2600 60  0001 C CNN "MFG P/N"
+F 5 "Vishay" H 4100 2600 60  0001 C CNN "MFG"
+	1    4300 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L 470R R12
+U 1 1 584476A5
+P 4300 3200
+F 0 "R12" V 4380 3200 50  0000 C CNN
+F 1 "470R" V 4300 3200 50  0000 C CNN
+F 2 "quad_level_shifter:R_1210" H 4350 2650 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/20035/dcrcwe3.pdf" H 4300 2750 50  0001 C CNN
+F 4 "CRCW1210470RFKEA" H 4800 2900 60  0001 C CNN "MFG P/N"
+F 5 "Vishay" H 4100 2900 60  0001 C CNN "MFG"
+	1    4300 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5400 2800 4600 2800
+Wire Wire Line
+	4600 2800 4600 2900
+Wire Wire Line
+	4600 2900 4450 2900
+Wire Wire Line
+	4450 3200 4700 3200
+Wire Wire Line
+	4700 3200 4700 2900
+Wire Wire Line
+	4700 2900 5400 2900
+$Comp
+L 2EDN7524 U4
+U 1 1 58447E83
+P 1500 5850
+F 0 "U4" H 1700 6300 50  0000 C CNN
+F 1 "2EDN7524" H 1700 5900 50  0000 C CNN
+F 2 "quad_level_shifter:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 2020 5760 60  0001 C CNN
+F 3 "http://www.infineon.com/dgdl/Infineon-2EDN752x-2EDN852x-DS-02_01-DS-v02_01-EN.pdf?fileId=5546d462525dbac40152abcc7dbb1727" H 1925 5540 60  0001 C CNN
+F 4 "2EDN7524FXTMA1" H 2105 5650 60  0001 C CNN "MFG P/N"
+F 5 "Infineon" H 1475 5650 60  0001 C CNN "MFG"
+	1    1500 5850
+	1    0    0    -1  
+$EndComp
+$Comp
+L CFSH05-20L D10
+U 1 1 58447E8B
+P 2900 4950
+F 0 "D10" H 2900 5050 50  0000 C CNN
+F 1 "CFSH05-20L" H 2900 4850 50  0000 C CNN
+F 2 "quad_level_shifter:SOD-882L" H 3030 4580 50  0001 C CNN
+F 3 "https://www.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=CFSH05-20L.PDF" H 2985 4655 50  0001 C CNN
+F 4 "Central Semiconductor" H 2285 4750 60  0001 C CNN "MFG"
+F 5 "CFSH05-20L TR" H 3220 4740 60  0001 C CNN "MFG P/N"
+	1    2900 4950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1400 5100 1350 5100
+Wire Wire Line
+	1350 4750 1350 5500
+$Comp
+L GNDREF #PWR016
+U 1 1 58447EB7
+P 1350 5750
+F 0 "#PWR016" H 1350 5500 50  0001 C CNN
+F 1 "GNDREF" H 1350 5600 50  0001 C CNN
+F 2 "" H 1350 5750 50  0000 C CNN
+F 3 "" H 1350 5750 50  0000 C CNN
+	1    1350 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 5750 1350 5700
+Wire Wire Line
+	1350 5700 1400 5700
+Wire Wire Line
+	2000 5550 4150 5550
+Wire Wire Line
+	4900 5550 4450 5550
+Wire Wire Line
+	2000 5250 4150 5250
+Wire Wire Line
+	4800 5250 4450 5250
+$Comp
+L CFSH05-20L D9
+U 1 1 58447ED5
+P 2600 4950
+F 0 "D9" H 2600 5050 50  0000 C CNN
+F 1 "CFSH05-20L" H 2600 4850 50  0000 C CNN
+F 2 "quad_level_shifter:SOD-882L" H 2730 4580 50  0001 C CNN
+F 3 "https://www.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=CFSH05-20L.PDF" H 2685 4655 50  0001 C CNN
+F 4 "Central Semiconductor" H 1985 4750 60  0001 C CNN "MFG"
+F 5 "CFSH05-20L TR" H 2920 4740 60  0001 C CNN "MFG P/N"
+	1    2600 4950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2600 5100 2600 7100
+Connection ~ 2600 5250
+Wire Wire Line
+	2900 5100 2900 7100
+Connection ~ 2900 5550
+Wire Wire Line
+	2600 4800 2600 4550
+Wire Wire Line
+	2900 4800 2900 4550
+$Comp
+L CFSH05-20L D14
+U 1 1 58447EEF
+P 2900 7250
+F 0 "D14" H 2900 7350 50  0000 C CNN
+F 1 "CFSH05-20L" H 2900 7150 50  0000 C CNN
+F 2 "quad_level_shifter:SOD-882L" H 3030 6880 50  0001 C CNN
+F 3 "https://www.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=CFSH05-20L.PDF" H 2985 6955 50  0001 C CNN
+F 4 "Central Semiconductor" H 2285 7050 60  0001 C CNN "MFG"
+F 5 "CFSH05-20L TR" H 3220 7040 60  0001 C CNN "MFG P/N"
+	1    2900 7250
+	0    1    1    0   
+$EndComp
+$Comp
+L CFSH05-20L D13
+U 1 1 58447EF7
+P 2600 7250
+F 0 "D13" H 2600 7350 50  0000 C CNN
+F 1 "CFSH05-20L" H 2600 7150 50  0000 C CNN
+F 2 "quad_level_shifter:SOD-882L" H 2730 6880 50  0001 C CNN
+F 3 "https://www.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=CFSH05-20L.PDF" H 2685 6955 50  0001 C CNN
+F 4 "Central Semiconductor" H 1985 7050 60  0001 C CNN "MFG"
+F 5 "CFSH05-20L TR" H 2920 7040 60  0001 C CNN "MFG P/N"
+	1    2600 7250
+	0    1    1    0   
+$EndComp
+$Comp
+L GNDREF #PWR017
+U 1 1 58447EFD
+P 2600 7450
+F 0 "#PWR017" H 2600 7200 50  0001 C CNN
+F 1 "GNDREF" H 2600 7300 50  0001 C CNN
+F 2 "" H 2600 7450 50  0000 C CNN
+F 3 "" H 2600 7450 50  0000 C CNN
+	1    2600 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 7450 2600 7400
+$Comp
+L GNDREF #PWR018
+U 1 1 58447F04
+P 2900 7450
+F 0 "#PWR018" H 2900 7200 50  0001 C CNN
+F 1 "GNDREF" H 2900 7300 50  0001 C CNN
+F 2 "" H 2900 7450 50  0000 C CNN
+F 3 "" H 2900 7450 50  0000 C CNN
+	1    2900 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 7450 2900 7400
+Wire Wire Line
+	1350 5200 1400 5200
+Connection ~ 1350 5100
+Wire Wire Line
+	1350 5500 1400 5500
+Connection ~ 1350 5200
+Wire Wire Line
+	1400 5300 1000 5300
+Wire Wire Line
+	1400 5600 1000 5600
+$Comp
+L 2EDN7524 U5
+U 1 1 58447F15
+P 1500 7150
+F 0 "U5" H 1700 7600 50  0000 C CNN
+F 1 "2EDN7524" H 1700 7200 50  0000 C CNN
+F 2 "quad_level_shifter:SOIC-8_3.9x4.9mm_Pitch1.27mm" H 2020 7060 60  0001 C CNN
+F 3 "http://www.infineon.com/dgdl/Infineon-2EDN752x-2EDN852x-DS-02_01-DS-v02_01-EN.pdf?fileId=5546d462525dbac40152abcc7dbb1727" H 1925 6840 60  0001 C CNN
+F 4 "2EDN7524FXTMA1" H 2105 6950 60  0001 C CNN "MFG P/N"
+F 5 "Infineon" H 1475 6950 60  0001 C CNN "MFG"
+	1    1500 7150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 6400 1350 6400
+Wire Wire Line
+	1350 6050 1350 6800
+$Comp
+L GNDREF #PWR019
+U 1 1 58447F41
+P 1350 7050
+F 0 "#PWR019" H 1350 6800 50  0001 C CNN
+F 1 "GNDREF" H 1350 6900 50  0001 C CNN
+F 2 "" H 1350 7050 50  0000 C CNN
+F 3 "" H 1350 7050 50  0000 C CNN
+	1    1350 7050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1350 7050 1350 7000
+Wire Wire Line
+	1350 7000 1400 7000
+Wire Wire Line
+	2000 6850 4150 6850
+Wire Wire Line
+	2000 6550 4150 6550
+Wire Wire Line
+	1350 6500 1400 6500
+Connection ~ 1350 6400
+Wire Wire Line
+	1350 6800 1400 6800
+Connection ~ 1350 6500
+Wire Wire Line
+	1400 6600 1000 6600
+Wire Wire Line
+	1400 6900 1000 6900
+$Comp
+L CFSH05-20L D12
+U 1 1 58447F55
+P 3500 4950
+F 0 "D12" H 3500 5050 50  0000 C CNN
+F 1 "CFSH05-20L" H 3500 4850 50  0000 C CNN
+F 2 "quad_level_shifter:SOD-882L" H 3630 4580 50  0001 C CNN
+F 3 "https://www.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=CFSH05-20L.PDF" H 3585 4655 50  0001 C CNN
+F 4 "Central Semiconductor" H 2885 4750 60  0001 C CNN "MFG"
+F 5 "CFSH05-20L TR" H 3820 4740 60  0001 C CNN "MFG P/N"
+	1    3500 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L CFSH05-20L D11
+U 1 1 58447F5D
+P 3200 4950
+F 0 "D11" H 3200 5050 50  0000 C CNN
+F 1 "CFSH05-20L" H 3200 4850 50  0000 C CNN
+F 2 "quad_level_shifter:SOD-882L" H 3330 4580 50  0001 C CNN
+F 3 "https://www.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=CFSH05-20L.PDF" H 3285 4655 50  0001 C CNN
+F 4 "Central Semiconductor" H 2585 4750 60  0001 C CNN "MFG"
+F 5 "CFSH05-20L TR" H 3520 4740 60  0001 C CNN "MFG P/N"
+	1    3200 4950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3200 4800 3200 4550
+Wire Wire Line
+	3500 4800 3500 4550
+$Comp
+L CFSH05-20L D16
+U 1 1 58447F73
+P 3500 7250
+F 0 "D16" H 3500 7350 50  0000 C CNN
+F 1 "CFSH05-20L" H 3500 7150 50  0000 C CNN
+F 2 "quad_level_shifter:SOD-882L" H 3630 6880 50  0001 C CNN
+F 3 "https://www.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=CFSH05-20L.PDF" H 3585 6955 50  0001 C CNN
+F 4 "Central Semiconductor" H 2885 7050 60  0001 C CNN "MFG"
+F 5 "CFSH05-20L TR" H 3820 7040 60  0001 C CNN "MFG P/N"
+	1    3500 7250
+	0    1    1    0   
+$EndComp
+$Comp
+L CFSH05-20L D15
+U 1 1 58447F7B
+P 3200 7250
+F 0 "D15" H 3200 7350 50  0000 C CNN
+F 1 "CFSH05-20L" H 3200 7150 50  0000 C CNN
+F 2 "quad_level_shifter:SOD-882L" H 3330 6880 50  0001 C CNN
+F 3 "https://www.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=CFSH05-20L.PDF" H 3285 6955 50  0001 C CNN
+F 4 "Central Semiconductor" H 2585 7050 60  0001 C CNN "MFG"
+F 5 "CFSH05-20L TR" H 3520 7040 60  0001 C CNN "MFG P/N"
+	1    3200 7250
+	0    1    1    0   
+$EndComp
+$Comp
+L GNDREF #PWR020
+U 1 1 58447F81
+P 3200 7450
+F 0 "#PWR020" H 3200 7200 50  0001 C CNN
+F 1 "GNDREF" H 3200 7300 50  0001 C CNN
+F 2 "" H 3200 7450 50  0000 C CNN
+F 3 "" H 3200 7450 50  0000 C CNN
+	1    3200 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3200 7450 3200 7400
+$Comp
+L GNDREF #PWR021
+U 1 1 58447F88
+P 3500 7450
+F 0 "#PWR021" H 3500 7200 50  0001 C CNN
+F 1 "GNDREF" H 3500 7300 50  0001 C CNN
+F 2 "" H 3500 7450 50  0000 C CNN
+F 3 "" H 3500 7450 50  0000 C CNN
+	1    3500 7450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3500 7450 3500 7400
+Wire Wire Line
+	3200 5100 3200 7100
+Connection ~ 3200 6550
+Wire Wire Line
+	3500 5100 3500 7100
+Connection ~ 3500 6850
+Wire Wire Line
+	4450 6550 5000 6550
+Wire Wire Line
+	4450 6850 5100 6850
+$Comp
+L VDD #PWR022
+U 1 1 5844858D
+P 2600 4550
+F 0 "#PWR022" H 2600 4400 50  0001 C CNN
+F 1 "VDD" H 2600 4700 50  0000 C CNN
+F 2 "" H 2600 4550 50  0000 C CNN
+F 3 "" H 2600 4550 50  0000 C CNN
+	1    2600 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR023
+U 1 1 5844860D
+P 2900 4550
+F 0 "#PWR023" H 2900 4400 50  0001 C CNN
+F 1 "VDD" H 2900 4700 50  0000 C CNN
+F 2 "" H 2900 4550 50  0000 C CNN
+F 3 "" H 2900 4550 50  0000 C CNN
+	1    2900 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR024
+U 1 1 5844868D
+P 3200 4550
+F 0 "#PWR024" H 3200 4400 50  0001 C CNN
+F 1 "VDD" H 3200 4700 50  0000 C CNN
+F 2 "" H 3200 4550 50  0000 C CNN
+F 3 "" H 3200 4550 50  0000 C CNN
+	1    3200 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L VDD #PWR025
+U 1 1 5844870D
+P 3500 4550
+F 0 "#PWR025" H 3500 4400 50  0001 C CNN
+F 1 "VDD" H 3500 4700 50  0000 C CNN
+F 2 "" H 3500 4550 50  0000 C CNN
+F 3 "" H 3500 4550 50  0000 C CNN
+	1    3500 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5400 3500 5400 3750
+Connection ~ 5400 3600
+$Comp
+L GNDREF #PWR026
+U 1 1 58448A99
+P 5400 3750
+F 0 "#PWR026" H 5400 3500 50  0001 C CNN
+F 1 "GNDREF" H 5400 3600 50  0001 C CNN
+F 2 "" H 5400 3750 50  0000 C CNN
+F 3 "" H 5400 3750 50  0000 C CNN
+	1    5400 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L 180R R13
+U 1 1 58448F54
+P 4300 5250
+F 0 "R13" V 4380 5250 50  0000 C CNN
+F 1 "180R" V 4300 5250 50  0000 C CNN
+F 2 "quad_level_shifter:R_1210" H 4350 4700 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/20035/dcrcwe3.pdf" H 4300 4800 50  0001 C CNN
+F 4 "CRCW1206180RFKEA" H 4800 4950 60  0001 C CNN "MFG P/N"
+F 5 "Vishay" H 4100 4950 60  0001 C CNN "MFG"
+	1    4300 5250
+	0    1    1    0   
+$EndComp
+$Comp
+L 180R R14
+U 1 1 58448FF5
+P 4300 5550
+F 0 "R14" V 4380 5550 50  0000 C CNN
+F 1 "180R" V 4300 5550 50  0000 C CNN
+F 2 "quad_level_shifter:R_1210" H 4350 5000 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/20035/dcrcwe3.pdf" H 4300 5100 50  0001 C CNN
+F 4 "CRCW1206180RFKEA" H 4800 5250 60  0001 C CNN "MFG P/N"
+F 5 "Vishay" H 4100 5250 60  0001 C CNN "MFG"
+	1    4300 5550
+	0    1    1    0   
+$EndComp
+$Comp
+L 180R R15
+U 1 1 58449082
+P 4300 6550
+F 0 "R15" V 4380 6550 50  0000 C CNN
+F 1 "180R" V 4300 6550 50  0000 C CNN
+F 2 "quad_level_shifter:R_1210" H 4350 6000 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/20035/dcrcwe3.pdf" H 4300 6100 50  0001 C CNN
+F 4 "CRCW1206180RFKEA" H 4800 6250 60  0001 C CNN "MFG P/N"
+F 5 "Vishay" H 4100 6250 60  0001 C CNN "MFG"
+	1    4300 6550
+	0    1    1    0   
+$EndComp
+$Comp
+L 180R R16
+U 1 1 58449126
+P 4300 6850
+F 0 "R16" V 4380 6850 50  0000 C CNN
+F 1 "180R" V 4300 6850 50  0000 C CNN
+F 2 "quad_level_shifter:R_1210" H 4350 6300 50  0001 C CNN
+F 3 "http://www.vishay.com/docs/20035/dcrcwe3.pdf" H 4300 6400 50  0001 C CNN
+F 4 "CRCW1206180RFKEA" H 4800 6550 60  0001 C CNN "MFG P/N"
+F 5 "Vishay" H 4100 6550 60  0001 C CNN "MFG"
+	1    4300 6850
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5400 3000 4800 3000
+Wire Wire Line
+	4800 3000 4800 5250
+Wire Wire Line
+	5400 3100 4900 3100
+Wire Wire Line
+	4900 3100 4900 5550
+Wire Wire Line
+	5400 3200 5000 3200
+Wire Wire Line
+	5000 3200 5000 6550
+Wire Wire Line
+	5400 3300 5100 3300
+Wire Wire Line
+	5100 3300 5100 6850
+Wire Wire Line
+	850  1050 1350 1050
+Connection ~ 1150 1050
+$Comp
+L +12V #PWR027
+U 1 1 58449F15
+P 1150 1000
+F 0 "#PWR027" H 1150 850 50  0001 C CNN
+F 1 "+12V" H 1150 1140 50  0000 C CNN
+F 2 "" H 1150 1000 50  0000 C CNN
+F 3 "" H 1150 1000 50  0000 C CNN
+	1    1150 1000
+	1    0    0    -1  
+$EndComp
+$Comp
+L 100n C5
+U 1 1 5844A416
+P 850 2550
+F 0 "C5" H 875 2650 50  0000 L CNN
+F 1 "100n" H 875 2450 50  0000 L CNN
+F 2 "quad_level_shifter:C_0805" H 1000 2100 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/documents/chara_sheet/CGJ4J2X7R1E104K125AA.pdf" H 1100 2200 50  0001 C CNN
+F 4 "CGJ4J2X7R1E104K125AA" H 1400 2300 60  0001 C CNN "MFG P/N"
+F 5 "TDK" H 700 2300 60  0001 C CNN "MFG"
+	1    850  2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDREF #PWR028
+U 1 1 5844A41C
+P 850 2700
+F 0 "#PWR028" H 850 2450 50  0001 C CNN
+F 1 "GNDREF" H 850 2550 50  0001 C CNN
+F 2 "" H 850 2700 50  0000 C CNN
+F 3 "" H 850 2700 50  0000 C CNN
+	1    850  2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1u C6
+U 1 1 5844A424
+P 1150 2550
+F 0 "C6" H 1175 2650 50  0000 L CNN
+F 1 "1u" H 1175 2450 50  0000 L CNN
+F 2 "quad_level_shifter:C_0805" H 1300 2100 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/documents/chara_sheet/C2012X5R1E105M085AC.pdf" H 1400 2200 50  0001 C CNN
+F 4 "C2012X5R1E105M085AC" H 1700 2300 60  0001 C CNN "MFG P/N"
+F 5 "TDK" H 1000 2300 60  0001 C CNN "MFG"
+	1    1150 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDREF #PWR029
+U 1 1 5844A42A
+P 1150 2700
+F 0 "#PWR029" H 1150 2450 50  0001 C CNN
+F 1 "GNDREF" H 1150 2550 50  0001 C CNN
+F 2 "" H 1150 2700 50  0000 C CNN
+F 3 "" H 1150 2700 50  0000 C CNN
+	1    1150 2700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	850  2400 1350 2400
+Connection ~ 1150 2400
+$Comp
+L +12V #PWR030
+U 1 1 5844A432
+P 1150 2350
+F 0 "#PWR030" H 1150 2200 50  0001 C CNN
+F 1 "+12V" H 1150 2490 50  0000 C CNN
+F 2 "" H 1150 2350 50  0000 C CNN
+F 3 "" H 1150 2350 50  0000 C CNN
+	1    1150 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L 100n C7
+U 1 1 5844A846
+P 800 4900
+F 0 "C7" H 825 5000 50  0000 L CNN
+F 1 "100n" H 825 4800 50  0000 L CNN
+F 2 "quad_level_shifter:C_0805" H 950 4450 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/documents/chara_sheet/CGJ4J2X7R1E104K125AA.pdf" H 1050 4550 50  0001 C CNN
+F 4 "CGJ4J2X7R1E104K125AA" H 1350 4650 60  0001 C CNN "MFG P/N"
+F 5 "TDK" H 650 4650 60  0001 C CNN "MFG"
+	1    800  4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDREF #PWR031
+U 1 1 5844A84C
+P 800 5050
+F 0 "#PWR031" H 800 4800 50  0001 C CNN
+F 1 "GNDREF" H 800 4900 50  0001 C CNN
+F 2 "" H 800 5050 50  0000 C CNN
+F 3 "" H 800 5050 50  0000 C CNN
+	1    800  5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1u C8
+U 1 1 5844A854
+P 1100 4900
+F 0 "C8" H 1125 5000 50  0000 L CNN
+F 1 "1u" H 1125 4800 50  0000 L CNN
+F 2 "quad_level_shifter:C_0805" H 1250 4450 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/documents/chara_sheet/C2012X5R1E105M085AC.pdf" H 1350 4550 50  0001 C CNN
+F 4 "C2012X5R1E105M085AC" H 1650 4650 60  0001 C CNN "MFG P/N"
+F 5 "TDK" H 950 4650 60  0001 C CNN "MFG"
+	1    1100 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDREF #PWR032
+U 1 1 5844A85A
+P 1100 5050
+F 0 "#PWR032" H 1100 4800 50  0001 C CNN
+F 1 "GNDREF" H 1100 4900 50  0001 C CNN
+F 2 "" H 1100 5050 50  0000 C CNN
+F 3 "" H 1100 5050 50  0000 C CNN
+	1    1100 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	800  4750 1350 4750
+Connection ~ 1100 4750
+$Comp
+L VDD #PWR033
+U 1 1 5844A8D9
+P 1100 4700
+F 0 "#PWR033" H 1100 4550 50  0001 C CNN
+F 1 "VDD" H 1100 4850 50  0000 C CNN
+F 2 "" H 1100 4700 50  0000 C CNN
+F 3 "" H 1100 4700 50  0000 C CNN
+	1    1100 4700
+	1    0    0    -1  
+$EndComp
+$Comp
+L 100n C9
+U 1 1 5844A990
+P 800 6200
+F 0 "C9" H 825 6300 50  0000 L CNN
+F 1 "100n" H 825 6100 50  0000 L CNN
+F 2 "quad_level_shifter:C_0805" H 950 5750 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/documents/chara_sheet/CGJ4J2X7R1E104K125AA.pdf" H 1050 5850 50  0001 C CNN
+F 4 "CGJ4J2X7R1E104K125AA" H 1350 5950 60  0001 C CNN "MFG P/N"
+F 5 "TDK" H 650 5950 60  0001 C CNN "MFG"
+	1    800  6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDREF #PWR034
+U 1 1 5844A996
+P 800 6350
+F 0 "#PWR034" H 800 6100 50  0001 C CNN
+F 1 "GNDREF" H 800 6200 50  0001 C CNN
+F 2 "" H 800 6350 50  0000 C CNN
+F 3 "" H 800 6350 50  0000 C CNN
+	1    800  6350
+	1    0    0    -1  
+$EndComp
+$Comp
+L 1u C10
+U 1 1 5844A99E
+P 1100 6200
+F 0 "C10" H 1125 6300 50  0000 L CNN
+F 1 "1u" H 1125 6100 50  0000 L CNN
+F 2 "quad_level_shifter:C_0805" H 1250 5750 50  0001 C CNN
+F 3 "https://product.tdk.com/info/en/documents/chara_sheet/C2012X5R1E105M085AC.pdf" H 1350 5850 50  0001 C CNN
+F 4 "C2012X5R1E105M085AC" H 1650 5950 60  0001 C CNN "MFG P/N"
+F 5 "TDK" H 950 5950 60  0001 C CNN "MFG"
+	1    1100 6200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDREF #PWR035
+U 1 1 5844A9A4
+P 1100 6350
+F 0 "#PWR035" H 1100 6100 50  0001 C CNN
+F 1 "GNDREF" H 1100 6200 50  0001 C CNN
+F 2 "" H 1100 6350 50  0000 C CNN
+F 3 "" H 1100 6350 50  0000 C CNN
+	1    1100 6350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	800  6050 1350 6050
+Connection ~ 1100 6050
+$Comp
+L VDD #PWR036
+U 1 1 5844A9AD
+P 1100 6000
+F 0 "#PWR036" H 1100 5850 50  0001 C CNN
+F 1 "VDD" H 1100 6150 50  0000 C CNN
+F 2 "" H 1100 6000 50  0000 C CNN
+F 3 "" H 1100 6000 50  0000 C CNN
+	1    1100 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L BSS138 Q1
+U 1 1 5844BC04
+P 7300 1350
+F 0 "Q1" V 7550 1400 50  0000 R CNN
+F 1 "BSS138" V 7650 1500 50  0000 R CNN
+F 2 "quad_level_shifter:SOT-23" H 7400 850 50  0001 C CNN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 7700 950 50  0001 C CNN
+F 4 "BSS138" H 7500 1050 60  0001 C CNN "MFG P/N"
+F 5 "Fairchild" H 7000 1050 60  0001 C CNN "MFG"
+	1    7300 1350
+	0    -1   1    0   
+$EndComp
+$Comp
+L VDD #PWR037
+U 1 1 5844C324
+P 7300 1050
+F 0 "#PWR037" H 7300 900 50  0001 C CNN
+F 1 "VDD" H 7300 1200 50  0000 C CNN
+F 2 "" H 7300 1050 50  0000 C CNN
+F 3 "" H 7300 1050 50  0000 C CNN
+	1    7300 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 1050 7300 1150
+$Comp
+L 10k R1
+U 1 1 5844D04B
+P 7000 1250
+F 0 "R1" V 7080 1250 50  0000 C CNN
+F 1 "10k" V 7000 1250 50  0000 C CNN
+F 2 "quad_level_shifter:R_0805" H 7050 700 50  0001 C CNN
+F 3 "http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/R-Chip/PYu-RC_Group_51_RoHS_L_4.pdf" H 7000 800 50  0001 C CNN
+F 4 "RC0805FR-0710KL" H 7500 950 60  0001 C CNN "MFG P/N"
+F 5 "Yageo" H 6800 950 60  0001 C CNN "MFG"
+	1    7000 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L 10k R2
+U 1 1 5844D170
+P 7600 1250
+F 0 "R2" V 7680 1250 50  0000 C CNN
+F 1 "10k" V 7600 1250 50  0000 C CNN
+F 2 "quad_level_shifter:R_0805" H 7650 700 50  0001 C CNN
+F 3 "http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/R-Chip/PYu-RC_Group_51_RoHS_L_4.pdf" H 7600 800 50  0001 C CNN
+F 4 "RC0805FR-0710KL" H 8100 950 60  0001 C CNN "MFG P/N"
+F 5 "Yageo" H 7400 950 60  0001 C CNN "MFG"
+	1    7600 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 1100 7300 1100
+Connection ~ 7300 1100
+Wire Wire Line
+	7600 1400 7600 2300
+Wire Wire Line
+	7600 1450 7500 1450
+Wire Wire Line
+	7100 1450 7000 1450
+Wire Wire Line
+	7000 1400 7000 2300
+$Comp
+L +12V #PWR038
+U 1 1 5844D51C
+P 7000 1050
+F 0 "#PWR038" H 7000 900 50  0001 C CNN
+F 1 "+12V" H 7000 1190 50  0000 C CNN
+F 2 "" H 7000 1050 50  0000 C CNN
+F 3 "" H 7000 1050 50  0000 C CNN
+	1    7000 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 1050 7000 1100
+$Comp
+L BSS138 Q2
+U 1 1 5844D65C
+P 8150 1350
+F 0 "Q2" V 8400 1400 50  0000 R CNN
+F 1 "BSS138" V 8500 1500 50  0000 R CNN
+F 2 "quad_level_shifter:SOT-23" H 8250 850 50  0001 C CNN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 8550 950 50  0001 C CNN
+F 4 "BSS138" H 8350 1050 60  0001 C CNN "MFG P/N"
+F 5 "Fairchild" H 7850 1050 60  0001 C CNN "MFG"
+	1    8150 1350
+	0    -1   1    0   
+$EndComp
+$Comp
+L VDD #PWR039
+U 1 1 5844D662
+P 8150 1050
+F 0 "#PWR039" H 8150 900 50  0001 C CNN
+F 1 "VDD" H 8150 1200 50  0000 C CNN
+F 2 "" H 8150 1050 50  0000 C CNN
+F 3 "" H 8150 1050 50  0000 C CNN
+	1    8150 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8150 1050 8150 1150
+$Comp
+L 10k R3
+U 1 1 5844D66B
+P 7850 1250
+F 0 "R3" V 7930 1250 50  0000 C CNN
+F 1 "10k" V 7850 1250 50  0000 C CNN
+F 2 "quad_level_shifter:R_0805" H 7900 700 50  0001 C CNN
+F 3 "http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/R-Chip/PYu-RC_Group_51_RoHS_L_4.pdf" H 7850 800 50  0001 C CNN
+F 4 "RC0805FR-0710KL" H 8350 950 60  0001 C CNN "MFG P/N"
+F 5 "Yageo" H 7650 950 60  0001 C CNN "MFG"
+	1    7850 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L 10k R4
+U 1 1 5844D673
+P 8450 1250
+F 0 "R4" V 8530 1250 50  0000 C CNN
+F 1 "10k" V 8450 1250 50  0000 C CNN
+F 2 "quad_level_shifter:R_0805" H 8500 700 50  0001 C CNN
+F 3 "http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/R-Chip/PYu-RC_Group_51_RoHS_L_4.pdf" H 8450 800 50  0001 C CNN
+F 4 "RC0805FR-0710KL" H 8950 950 60  0001 C CNN "MFG P/N"
+F 5 "Yageo" H 8250 950 60  0001 C CNN "MFG"
+	1    8450 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8450 1100 8150 1100
+Connection ~ 8150 1100
+Wire Wire Line
+	8450 1400 8450 2200
+Wire Wire Line
+	8450 1450 8350 1450
+Wire Wire Line
+	7950 1450 7850 1450
+Wire Wire Line
+	7850 2200 7850 1400
+$Comp
+L +12V #PWR040
+U 1 1 5844D67F
+P 7850 1050
+F 0 "#PWR040" H 7850 900 50  0001 C CNN
+F 1 "+12V" H 7850 1190 50  0000 C CNN
+F 2 "" H 7850 1050 50  0000 C CNN
+F 3 "" H 7850 1050 50  0000 C CNN
+	1    7850 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7850 1050 7850 1100
+$Comp
+L BSS138 Q3
+U 1 1 5844D6F7
+P 9000 1350
+F 0 "Q3" V 9250 1400 50  0000 R CNN
+F 1 "BSS138" V 9350 1500 50  0000 R CNN
+F 2 "quad_level_shifter:SOT-23" H 9100 850 50  0001 C CNN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 9400 950 50  0001 C CNN
+F 4 "BSS138" H 9200 1050 60  0001 C CNN "MFG P/N"
+F 5 "Fairchild" H 8700 1050 60  0001 C CNN "MFG"
+	1    9000 1350
+	0    -1   1    0   
+$EndComp
+$Comp
+L VDD #PWR041
+U 1 1 5844D6FD
+P 9000 1050
+F 0 "#PWR041" H 9000 900 50  0001 C CNN
+F 1 "VDD" H 9000 1200 50  0000 C CNN
+F 2 "" H 9000 1050 50  0000 C CNN
+F 3 "" H 9000 1050 50  0000 C CNN
+	1    9000 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9000 1050 9000 1150
+$Comp
+L 10k R5
+U 1 1 5844D706
+P 8700 1250
+F 0 "R5" V 8780 1250 50  0000 C CNN
+F 1 "10k" V 8700 1250 50  0000 C CNN
+F 2 "quad_level_shifter:R_0805" H 8750 700 50  0001 C CNN
+F 3 "http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/R-Chip/PYu-RC_Group_51_RoHS_L_4.pdf" H 8700 800 50  0001 C CNN
+F 4 "RC0805FR-0710KL" H 9200 950 60  0001 C CNN "MFG P/N"
+F 5 "Yageo" H 8500 950 60  0001 C CNN "MFG"
+	1    8700 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L 10k R6
+U 1 1 5844D70E
+P 9300 1250
+F 0 "R6" V 9380 1250 50  0000 C CNN
+F 1 "10k" V 9300 1250 50  0000 C CNN
+F 2 "quad_level_shifter:R_0805" H 9350 700 50  0001 C CNN
+F 3 "http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/R-Chip/PYu-RC_Group_51_RoHS_L_4.pdf" H 9300 800 50  0001 C CNN
+F 4 "RC0805FR-0710KL" H 9800 950 60  0001 C CNN "MFG P/N"
+F 5 "Yageo" H 9100 950 60  0001 C CNN "MFG"
+	1    9300 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9300 1100 9000 1100
+Connection ~ 9000 1100
+Wire Wire Line
+	9300 1400 9300 2100
+Wire Wire Line
+	9300 1450 9200 1450
+Wire Wire Line
+	8800 1450 8700 1450
+Wire Wire Line
+	8700 1400 8700 2100
+$Comp
+L +12V #PWR042
+U 1 1 5844D71A
+P 8700 1050
+F 0 "#PWR042" H 8700 900 50  0001 C CNN
+F 1 "+12V" H 8700 1190 50  0000 C CNN
+F 2 "" H 8700 1050 50  0000 C CNN
+F 3 "" H 8700 1050 50  0000 C CNN
+	1    8700 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 1050 8700 1100
+$Comp
+L BSS138 Q4
+U 1 1 5844D7EC
+P 9850 1350
+F 0 "Q4" V 10100 1400 50  0000 R CNN
+F 1 "BSS138" V 10200 1500 50  0000 R CNN
+F 2 "quad_level_shifter:SOT-23" H 9950 850 50  0001 C CNN
+F 3 "https://www.fairchildsemi.com/datasheets/BS/BSS138.pdf" H 10250 950 50  0001 C CNN
+F 4 "BSS138" H 10050 1050 60  0001 C CNN "MFG P/N"
+F 5 "Fairchild" H 9550 1050 60  0001 C CNN "MFG"
+	1    9850 1350
+	0    -1   1    0   
+$EndComp
+$Comp
+L VDD #PWR043
+U 1 1 5844D7F2
+P 9850 1050
+F 0 "#PWR043" H 9850 900 50  0001 C CNN
+F 1 "VDD" H 9850 1200 50  0000 C CNN
+F 2 "" H 9850 1050 50  0000 C CNN
+F 3 "" H 9850 1050 50  0000 C CNN
+	1    9850 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9850 1050 9850 1150
+$Comp
+L 10k R7
+U 1 1 5844D7FB
+P 9550 1250
+F 0 "R7" V 9630 1250 50  0000 C CNN
+F 1 "10k" V 9550 1250 50  0000 C CNN
+F 2 "quad_level_shifter:R_0805" H 9600 700 50  0001 C CNN
+F 3 "http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/R-Chip/PYu-RC_Group_51_RoHS_L_4.pdf" H 9550 800 50  0001 C CNN
+F 4 "RC0805FR-0710KL" H 10050 950 60  0001 C CNN "MFG P/N"
+F 5 "Yageo" H 9350 950 60  0001 C CNN "MFG"
+	1    9550 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L 10k R8
+U 1 1 5844D803
+P 10150 1250
+F 0 "R8" V 10230 1250 50  0000 C CNN
+F 1 "10k" V 10150 1250 50  0000 C CNN
+F 2 "quad_level_shifter:R_0805" H 10200 700 50  0001 C CNN
+F 3 "http://www.yageo.com/NewPortal/yageodocoutput?fileName=/pdf/R-Chip/PYu-RC_Group_51_RoHS_L_4.pdf" H 10150 800 50  0001 C CNN
+F 4 "RC0805FR-0710KL" H 10650 950 60  0001 C CNN "MFG P/N"
+F 5 "Yageo" H 9950 950 60  0001 C CNN "MFG"
+	1    10150 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10150 1100 9850 1100
+Connection ~ 9850 1100
+Wire Wire Line
+	10150 1400 10150 2000
+Wire Wire Line
+	10150 1450 10050 1450
+Wire Wire Line
+	9650 1450 9550 1450
+Wire Wire Line
+	9550 2000 9550 1400
+$Comp
+L +12V #PWR044
+U 1 1 5844D80F
+P 9550 1050
+F 0 "#PWR044" H 9550 900 50  0001 C CNN
+F 1 "+12V" H 9550 1190 50  0000 C CNN
+F 2 "" H 9550 1050 50  0000 C CNN
+F 3 "" H 9550 1050 50  0000 C CNN
+	1    9550 1050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9550 1050 9550 1100
+Wire Wire Line
+	10150 2000 10600 2000
+Connection ~ 10150 1450
+Wire Wire Line
+	9300 2100 10600 2100
+Connection ~ 9300 1450
+Wire Wire Line
+	8450 2200 10600 2200
+Connection ~ 8450 1450
+Wire Wire Line
+	7600 2300 10600 2300
+Connection ~ 7600 1450
+Wire Wire Line
+	6400 2000 9550 2000
+Connection ~ 9550 1450
+Wire Wire Line
+	8700 2100 6400 2100
+Connection ~ 8700 1450
+Wire Wire Line
+	6400 2200 7850 2200
+Connection ~ 7850 1450
+Wire Wire Line
+	7000 2300 6400 2300
+Connection ~ 7000 1450
+Wire Wire Line
+	6400 2400 10600 2400
+Wire Wire Line
+	6400 2600 7400 2600
+Wire Wire Line
+	7400 2600 7400 3550
+Wire Wire Line
+	6400 2700 7300 2700
+Wire Wire Line
+	7300 2700 7300 3550
+Wire Wire Line
+	6400 2800 7200 2800
+Wire Wire Line
+	7200 2800 7200 3550
+Wire Wire Line
+	6400 2900 7100 2900
+Wire Wire Line
+	7100 2900 7100 3550
+Wire Wire Line
+	6400 3000 7000 3000
+Wire Wire Line
+	7000 3000 7000 3550
+Wire Wire Line
+	6400 3100 6900 3100
+Wire Wire Line
+	6900 3100 6900 3550
+Wire Wire Line
+	6400 3200 6800 3200
+Wire Wire Line
+	6800 3200 6800 3550
+Wire Wire Line
+	6400 3300 6700 3300
+Wire Wire Line
+	6700 3300 6700 3550
+$Comp
+L EDGE_CONN_02X09 P1
+U 1 1 5845395C
+P 9350 4850
+F 0 "P1" H 9350 5350 50  0000 C CNN
+F 1 "EDGE_CONN_02X09" V 9350 4850 50  0000 C CNN
+F 2 "quad_level_shifter:EDGE_CONN_02X09" H 9400 3950 50  0001 C CNN
+F 3 "http://suddendocs.samtec.com/prints/ces-dmkt.pdf" H 9550 4100 50  0001 C CNN
+F 4 "CES-109-01-T-D" H 9800 4250 60  0001 C CNN "MFG P/N"
+F 5 "Samtec" H 9050 4250 60  0001 C CNN "MFG"
+	1    9350 4850
+	1    0    0    -1  
+$EndComp
+NoConn ~ 9600 4850
+$Comp
+L VDD #PWR045
+U 1 1 5845551E
+P 8900 3200
+F 0 "#PWR045" H 8900 3050 50  0001 C CNN
+F 1 "VDD" H 8900 3350 50  0000 C CNN
+F 2 "" H 8900 3200 50  0000 C CNN
+F 3 "" H 8900 3200 50  0000 C CNN
+	1    8900 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L +12V #PWR046
+U 1 1 584555C5
+P 8700 3200
+F 0 "#PWR046" H 8700 3050 50  0001 C CNN
+F 1 "+12V" H 8700 3340 50  0000 C CNN
+F 2 "" H 8700 3200 50  0000 C CNN
+F 3 "" H 8700 3200 50  0000 C CNN
+	1    8700 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDREF #PWR047
+U 1 1 58455910
+P 9100 3600
+F 0 "#PWR047" H 9100 3350 50  0001 C CNN
+F 1 "GNDREF" H 9100 3450 50  0001 C CNN
+F 2 "" H 9100 3600 50  0000 C CNN
+F 3 "" H 9100 3600 50  0000 C CNN
+	1    9100 3600
+	1    0    0    -1  
+$EndComp
+Text Label 8850 2000 0    40   ~ 0
+/RESET_HV
+Text Label 8000 2100 0    40   ~ 0
+/CS_HV
+Text Label 7150 2200 0    40   ~ 0
+DIN_HV
+Text Label 6600 2300 0    40   ~ 0
+SCLK_HV
+Text Label 2100 1600 0    40   ~ 0
+IO0_HV_DR
+Text Label 2100 1900 0    40   ~ 0
+IO1_HV_DR
+Text Label 2100 2900 0    40   ~ 0
+IO2_HV_DR
+Text Label 2100 3200 0    40   ~ 0
+IO3_HV_DR
+Text Label 2100 5250 0    40   ~ 0
+IO0_LV_DR
+Text Label 2100 5550 0    40   ~ 0
+IO1_LV_DR
+Text Label 2100 6550 0    40   ~ 0
+IO2_LV_DR
+Text Label 2100 6850 0    40   ~ 0
+IO3_LV_DR
+Text Label 5050 2600 0    40   ~ 0
+IO0_HV_SW
+Text Label 5050 2700 0    40   ~ 0
+IO1_HV_SW
+Text Label 5050 2800 0    40   ~ 0
+IO2_HV_SW
+Text Label 5050 2900 0    40   ~ 0
+IO3_HV_SW
+Text Label 5050 3000 0    40   ~ 0
+IO0_LV_SW
+Text Label 5050 3100 0    40   ~ 0
+IO1_LV_SW
+Text Label 5050 3200 0    40   ~ 0
+IO2_LV_SW
+Text Label 5100 3300 0    40   ~ 0
+IO3_LV_SW
+Wire Wire Line
+	9100 3600 9100 3500
+Text GLabel 10600 2400 2    40   Output ~ 0
+DOUT
+Text GLabel 9600 4650 2    40   Output ~ 0
+DOUT
+Text GLabel 9600 4450 2    40   Input ~ 0
+SCLK
+Text GLabel 9600 4550 2    40   Input ~ 0
+DIN
+Text GLabel 9600 4750 2    40   UnSpc ~ 0
+GND
+Text GLabel 9600 4950 2    40   BiDi ~ 0
+IO0_LV
+Text GLabel 9600 5050 2    40   BiDi ~ 0
+IO1_LV
+Text GLabel 9600 5150 2    40   BiDi ~ 0
+IO2_LV
+Text GLabel 9600 5250 2    40   BiDi ~ 0
+IO3_LV
+Text GLabel 10600 2300 2    40   Input ~ 0
+SCLK
+Text GLabel 10600 2200 2    40   Input ~ 0
+DIN
+Text GLabel 10600 2100 2    40   Input ~ 0
+/CS
+Text GLabel 10600 2000 2    40   Input ~ 0
+/RESET
+Text GLabel 9100 3500 1    40   UnSpc ~ 0
+GND
+Text GLabel 8900 3250 3    40   UnSpc ~ 0
+VDD
+Text GLabel 8700 3250 3    40   UnSpc ~ 0
++12V
+Text GLabel 9100 4750 0    40   UnSpc ~ 0
+GND
+Text GLabel 9100 4650 0    40   UnSpc ~ 0
+VDD
+Text GLabel 9100 4850 0    40   UnSpc ~ 0
++12V
+Text GLabel 9100 4550 0    40   Input ~ 0
+/RESET
+Text GLabel 9100 4450 0    40   Input ~ 0
+/CS
+Text GLabel 7000 3550 3    40   BiDi ~ 0
+IO0_LV
+Text GLabel 6900 3550 3    40   BiDi ~ 0
+IO1_LV
+Text GLabel 6800 3550 3    40   BiDi ~ 0
+IO2_LV
+Text GLabel 6700 3550 3    40   BiDi ~ 0
+IO3_LV
+Wire Wire Line
+	1100 6000 1100 6050
+Wire Wire Line
+	1100 4700 1100 4750
+Wire Wire Line
+	1150 1000 1150 1050
+Wire Wire Line
+	1150 2350 1150 2400
+Text GLabel 9100 4950 0    40   BiDi ~ 0
+IO0_HV
+Text GLabel 9100 5050 0    40   BiDi ~ 0
+IO1_HV
+Text GLabel 9100 5150 0    40   BiDi ~ 0
+IO2_HV
+Text GLabel 9100 5250 0    40   BiDi ~ 0
+IO3_HV
+Text GLabel 7400 3550 3    40   BiDi ~ 0
+IO0_HV
+Text GLabel 7300 3550 3    40   BiDi ~ 0
+IO1_HV
+Text GLabel 7200 3550 3    40   BiDi ~ 0
+IO2_HV
+Text GLabel 7100 3550 3    40   BiDi ~ 0
+IO3_HV
+Text GLabel 1000 5300 0    40   BiDi ~ 0
+IO0_HV
+Text GLabel 1000 5600 0    40   BiDi ~ 0
+IO1_HV
+Text GLabel 1000 6600 0    40   BiDi ~ 0
+IO2_HV
+Text GLabel 1000 6900 0    40   BiDi ~ 0
+IO3_HV
+Text GLabel 1000 3250 0    40   BiDi ~ 0
+IO3_LV
+Text GLabel 1000 2950 0    40   BiDi ~ 0
+IO2_LV
+Text GLabel 1000 1950 0    40   BiDi ~ 0
+IO1_LV
+Text GLabel 1000 1650 0    40   BiDi ~ 0
+IO0_LV
+Wire Wire Line
+	8900 3200 8900 3250
+Wire Wire Line
+	8700 3200 8700 3250
+$EndSCHEMATC

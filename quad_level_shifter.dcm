@@ -1,0 +1,64 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 100n
+D 100n unpolarized capacitor
+K capacitor
+$ENDCMP
+#
+$CMP 10k
+D 10k 1% 0805 resistor
+K resistor
+$ENDCMP
+#
+$CMP 180R
+D 180R 1% 0.5W 1210 resistor
+K resistor
+$ENDCMP
+#
+$CMP 1u
+D 1u unpolarized ceramic capacitor
+K capacitor
+$ENDCMP
+#
+$CMP 2EDN752
+D Dual fast MOSFET driver
+K driver
+F http://www.infineon.com/dgdl/Infineon-2EDN752x-2EDN852x-DS-02_01-DS-v02_01-EN.pdf?fileId=5546d462525dbac40152abcc7dbb1727
+$ENDCMP
+#
+$CMP 2EDN7524
+D Dual fast MOSFET driver
+K driver
+$ENDCMP
+#
+$CMP 470R
+D 470R 1% 0.5W 1210 resistor
+K resistor
+$ENDCMP
+#
+$CMP BSS138
+D Transistor N-MOSFET (general)
+K nmos n-mos n-mosfet transistor
+$ENDCMP
+#
+$CMP CFSH05-20L
+D CFSH05-20L schottky diode
+K schottky diode
+$ENDCMP
+#
+$CMP EDGE_CONN_02X08
+D Card edge connector, double row, 02x08
+K connector
+$ENDCMP
+#
+$CMP EDGE_CONN_02X09
+D Card edge connector, double row, 02x09
+K connector
+$ENDCMP
+#
+$CMP MAX395CWG+
+D Octal analog switch
+K analog switch
+$ENDCMP
+#
+#End Doc Library
