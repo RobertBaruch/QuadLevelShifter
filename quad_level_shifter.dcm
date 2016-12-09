@@ -10,6 +10,11 @@ D 10k 1% 0805 resistor
 K resistor
 $ENDCMP
 #
+$CMP 10u
+D 10u polarised capacitor
+K capacitor
+$ENDCMP
+#
 $CMP 180R
 D 180R 1% 0.5W 1210 resistor
 K resistor
